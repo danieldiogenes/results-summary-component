@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Results summary component</title>
+</head>
+<body>
+  <div class="container">
+    <section class="result">
+      <h3>Your Result</h3>
+      <div class="result__circle">
+        <p class="score-points">
+          <span>76</span>
+          of 100
+        </p>
+      </div>
+      <div class="score-message">
+        <span>Great</span> 
+        <p>Your performance exceed 65% of the people conducting the test here!</p>
+      </div>
+    </section>
+    <section class="summary">
+      <h3>Summary</h3>
+      <ul class="summary__qualities">
+        <li class="summary__qualities--reaction">
+          <img src="./images/icon-reaction.svg">
+          <p>Reaction</p>
+          <p><span>80</span> / 100</p>
+        </li>
+        <li class="summary__qualities--memory">
+          <img src="./images/icon-memory.svg">
+          <p>Memory</p>
+          <p><span>92</span> / 100</p>
+        </li>
+        <li class="summary__qualities--verbal">
+          <img src="./images/icon-verbal.svg">
+          <p>Verbal</p>
+          <p><span>61</span> / 100</p>
+        </li>
+        <li class="summary__qualities--visual">
+          <img src="./images/icon-visual.svg">
+          <p>Visual</p>
+          <p><span>73</span> / 100</p>
+        </li>
+      </ul>
+      <button class="btn">Continue</button>
+    </section>
+  </div>
+</body>
+</html>
