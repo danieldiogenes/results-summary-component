@@ -1,0 +1,242 @@
+:root {
+
+  /* primary colors */
+  --lightRed: hsl(0, 100%, 67%);
+  --orangeYellow: hsl(39, 100%, 56%);
+  --greenTeal: hsl(166, 100%, 37%);
+  --cobaltBlue: hsl(234, 85%, 45%);
+
+  /* neutral colors */
+  --darkNavy: hsl(223, 30%, 27%);
+  --lightBlue: hsl(241, 100%, 89%);
+  --veryLightBlue: hsl(220, 100%, 96%);
+
+  /* gradients */
+  --gradientBackground: linear-gradient(to bottom, hsla(252, 100%, 63%), hsla(241, 81%, 54%));
+  --gradientCircle: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+
+  /* font weights*/
+  --medium: 500;
+  --bold: 700;
+  --extraBold: 800;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--veryLightBlue);
+  font-family: 'Hanken Grotesk', sans-serif;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background: var(--gradientBackground);
+  color: var(--lightBlue);
+  text-align: center;
+  padding-top: 24px;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+
+.result h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.result__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  background: var(--gradientCircle);
+  border-radius: 50%;
+}
+
+.score-points {
+  font-size: 16px;
+  font-weight: bold;
+  color: hsl(241, 100%, 89%, 0.5);
+}
+
+.score-points span {
+  display: block;
+  font-size: 56px;
+  font-weight: var(--extraBold);
+  color: white;
+}
+
+.score-message p {
+  max-width: 260px;
+  font-size: 16px;
+  font-weight: var(--medium);
+  padding-bottom: 40px;
+}
+
+.score-message span {
+  display: block;
+  font-size: 24px;
+  font-weight: var(--bold);
+  color: white;
+  margin-bottom: 8px;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 30px 30px 30px;
+}
+
+.summary h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--darkNavy);
+  margin-bottom: 24px;
+}
+
+.summary__qualities {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.summary__qualities li {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  font-weight: var(--medium);
+  padding: 17px 16px 18px 16px;
+  border-radius: 12px;
+}
+
+.summary__qualities li img {
+  padding-right: 12px;
+}
+
+.summary__qualities li p:nth-child(3) {
+  color: hsla(223, 30%, 27%, 0.5);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.summary__qualities li span {
+  color: var(--darkNavy);
+}
+
+.summary__qualities--reaction {
+  background: hsla(0, 100%, 67%, 0.05);
+  color: var(--lightRed);
+}
+
+.summary__qualities--memory {
+  background: hsla(39, 100%, 56%, 0.05);
+  color: var(--orangeYellow);
+}
+
+.summary__qualities--verbal {
+  background: hsl(166, 100%, 37%, 0.05);
+  color: var(--greenTeal);
+}
+
+.summary__qualities--visual {
+  background: hsl(234, 85%, 45%, 0.05);
+  color: var(--cobaltBlue);
+}
+
+.btn {
+  background: var(--darkNavy);
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  border-radius: 128px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--gradientBackground);
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 736px;
+    margin: auto;
+    border-radius: 32px;
+    box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+  }
+  .result {
+    padding-top: 38px;
+    padding-bottom: 7px;
+    border-radius: 32px;
+    gap: 28px;
+  }
+  .result h3 {
+    font-size: 24px;
+  }
+  .result__circle {
+    width: 200px;
+    height: 200px;
+  }
+  .score-points {
+    font-size: 18px;
+  }
+  .score-points span {
+    font-size: 72px;
+    line-height: 72px;
+    margin-bottom: 4px;
+  }
+  .score-message p {
+    font-size: 18px;
+    padding-bottom: 55px;
+    padding-right: 57px;
+    padding-left: 58px;
+  }
+  .score-message span {
+    font-size: 32px;
+    margin-bottom: 14px;
+  }
+  .summary {
+    padding: 38px 40px 46px 40px;
+  }
+  .summary h3 {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  .summary__qualities {
+    font-size: 18px;
+    margin-bottom: 41px;
+  }
+  .summary__qualities li p:nth-child(3) {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
