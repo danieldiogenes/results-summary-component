@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/danieldiogenes/results-summary-component)
-- Live Site URL: [result-summary-component](https://your-live-site-url.com)
+- Live Site URL: [result-summary-component](https://danieldiogenes.github.io/results-summary-component/)
 
 ## My process
 
@@ -40,6 +40,12 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+
+### What I've learned
+
+In this project I was able to exercise the use of flexbox and css grid, despite being a simple resolution application and that could be done more quickly using some library like tailwind or bootstrap, I decided to opt for a more "pure" solution using simple css.
+
+To organize the css classes I used the BEM methodology, it is easier to understand the code when it is done using pure css, which is the pattern I intend to follow in this type of solution, I also used variables to simplify the code of the css classes and make it easier some change. I chose not to apply javascript or leave the page with dynamic data, I intend to make the project more complete in the future.
 
 ## Author
 
